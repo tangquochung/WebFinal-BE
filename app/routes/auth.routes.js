@@ -29,7 +29,7 @@ module.exports = function(app) {
      * @apiBody {String} password a string with 6 <= length <= 64
      *
      * @apiExample Example usage:
-     * curl -i https://motorshop-85ou.onrender.com/api/auth/signup
+     * curl -i https://motorbikeshop-vewn.onrender.com/api/auth/signup
      *
      * @apiSuccess {String} message registered successfully
      * @apiSuccessExample Success-Response:
@@ -54,7 +54,7 @@ module.exports = function(app) {
      *        "Failed! Email is already in use!,
      *      }
      *
-     *@apiSampleRequest https://motorshop-85ou.onrender.com/api/auth/signup
+     *@apiSampleRequest https://motorbikeshop-vewn.onrender.com/api/auth/signup
      */
   app.post(
     "/api/auth/signup",
@@ -80,7 +80,7 @@ module.exports = function(app) {
      * @apiBody {String} password=123456789 a string with 8 < length < 20
      *
      * @apiExample Example usage:
-     * curl -i https://motorshop-85ou.onrender.com/api/auth/signin
+     * curl -i https://motorbikeshop-vewn.onrender.com/api/auth/signin
      *
      * @apiSuccess {object} data the user data with accessToken
      * @apiSuccess {array} roles of user
@@ -114,7 +114,7 @@ module.exports = function(app) {
      *      }
      * 
      * 
-     * @apiSampleRequest https://motorshop-85ou.onrender.com/api/auth/signin
+     * @apiSampleRequest https://motorbikeshop-vewn.onrender.com/api/auth/signin
      */
   app.post("/api/auth/signin", controller.signin);
 
